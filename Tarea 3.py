@@ -20,6 +20,13 @@ df.head(10)
 #sns.displot(data=df , x="customer",y="total_it" )
 
 # %%
-sns.scatterplot(data=df , x="customer",y="discount%", hue="total_it" )
+sns.boxplot(data=df , x="total_it",y="discount%" )
 
+# %%
+df.corr()
+
+
+# %%
+
+sns.heatmap(df.corr())
 # %%
